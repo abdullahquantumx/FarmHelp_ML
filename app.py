@@ -7,10 +7,10 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the first trained model
-crop_yield_model = load_model('model.h5')
+crop_yield_model = load_model('models/model.h5')
 
 # Load the second trained model
-acres_prediction_model = load_model('crop_yield_tensorflow_model.h5')
+acres_prediction_model = load_model('models//crop_yield_tensorflow_model.h5')
 
 # Define a route for crop yield prediction
 # http://localhost:5000/predict?inputData=7,8,4,5,4,5,7
